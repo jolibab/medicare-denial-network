@@ -40,7 +40,7 @@ h1, h2, h3 { font-family: 'IBM Plex Mono', monospace; }
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
-FILE_PATH = "Medicare_FFS_CERT_2025.csv""
+FILE_PATH = "Medicare_FFS_CERT_2025.csv"
 
 PALETTE = [
     "#82131C", "#457B9D", "#2A9D8F", "#E9C46A",
