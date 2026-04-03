@@ -359,7 +359,7 @@ with st.spinner("Building normalised provider profiles..."):
 with st.spinner("Computing similarities and detecting clusters..."):
     G = build_graph(providers, profiles, provider_totals, similarity_threshold, top_k_edges)
     components       = sorted(nx.connected_components(G), key=len, reverse=True)
-    G_main           = G.subgraph(components[0]).copy()
+    G_main           = G.copy()
     communities_list = sorted(
         community.greedy_modularity_communities(G_main), key=len, reverse=True
     )
